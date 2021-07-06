@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
 
 const pads = [
   {
@@ -94,7 +95,7 @@ class App extends React.Component {
   render() {
     return(
     <div id='drum-machine'>
-        <h1 className='text-center'>Drum Machine</h1>
+        <h1>Drum Machine</h1>
         <div className='display-style' id='display-div'>
         <div id='pads'>
           {this.state.drumPads.pads.map(item => (
